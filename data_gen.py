@@ -14,7 +14,7 @@ def generate(data_list, output_dir):
         content = f1.readlines()
         content = [x.strip() for x in content] 
         for line in content:
-            name, filepath = line.split('  ',1)
+            name, filepath = line.split('  ',1) # check one/two space
             # filepath, _ = filepath.split(' |', 1)
 
             # spkpath, _ = filepath.split('normal/', 1)[1].split('/s', 1)
@@ -23,7 +23,7 @@ def generate(data_list, output_dir):
             spkpath = os.path.join(output_dir, filename_split[0], filename_split[1])
 
             # name = name.replace("n","pw")
-            if os.path.exists(os.path.join(spkpath, name) + '.wav'):
+            if os.path.exists(os.path.join(spkpath, name) + '-pw.wav'): # '.wav'): #
                 continue
 
             if not os.path.exists(spkpath):
@@ -34,7 +34,7 @@ def generate(data_list, output_dir):
             # s_n, fs = sf.read(filepath)
             s_pw = pesudo_whisper_gen(s_n, fs)
             
-            sf.write(os.path.join(spkpath, name) + '.wav', s_pw, fs)
+            sf.write(os.path.join(spkpath, name) + '-pw.wav', s_pw, fs) #'.wav', s_pw, fs)    # '-pw.wav', s_pw, fs)
     f1.close()
 
 
@@ -53,4 +53,6 @@ if __name__ == '__main__':
     data_list = argv.data_list
     output_dir = argv.output_dir
 
+    print(data_list)
+    
     generate(data_list, output_dir)
