@@ -1,7 +1,7 @@
 # Normal2Whisper
 This is an implementation of our pseudo-whispered speech conversion method in the paper Improving Whispered Speech Recognition Performance using Pseudo-whispered based Data Augmentation (to be appear in ASRU 2023).
 
-<img src="Pseudo-whisper.png" width="60%">
+<img src="Pseudo-whisper.png" width="100%">
 
 ## Dependencies
 * Python 3.8 
