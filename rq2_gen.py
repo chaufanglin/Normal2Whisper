@@ -44,12 +44,12 @@ def generate(data_list, output_dir, generating_mode):
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description = 'Generate pseudo whispered speech data')
 
-    data_list_default = '/tudelft.net/staff-bulk/ewi/insy/SpeechLab/zhaofenglin/Normal2Whisper/1'
-    output_dir_default = '/tudelft.net/staff-bulk/ewi/insy/SpeechLab/zhaofenglin/Normal2Whisper/output_dir'
-    generating_mode_default = '2'
+    data_list_default = './list_example'
+    output_dir_default = './output_dir'
+    generating_mode_default = '1'
 
     parser.add_argument('--data_list', type = str, help = 'List for the normal speech directories.', default = data_list_default)
-    parser.add_argument('--output_dir', type = str, help = 'Directory for the output pesudo whispered speech.', default = output_dir_default)
+    parser.add_argument('--output_dir', type = str, help = 'Directory for the output modified speech.', default = output_dir_default)
     parser.add_argument('--generating_mode', type = str, help = 'Generating mode: 1) glottal contribution removal; 2) formant bandwidth widen.', 
                         default = generating_mode_default)
 

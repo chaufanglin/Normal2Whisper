@@ -41,12 +41,11 @@ def generate(data_list, output_dir):
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description = 'Generate pseudo whispered speech data')
 
-    data_list_default = '/tudelft.net/staff-bulk/ewi/insy/SpeechLab/zhaofenglin/Normal2Whisper/1'
-    # output_dir_default = '/tudelft.net/staff-bulk/ewi/insy/SpeechLab/zhaofenglin/Normal2Whisper/output_dir'
-    output_dir_default = '/tudelft.net/staff-bulk/ewi/insy/SpeechLab/zhaofenglin/LibriSpeech/train-clean-100-pw'
+    data_list_default = './list_example'
+    output_dir_default = './output_dir'
 
     parser.add_argument('--data_list', type = str, help = 'List for the normal speech directories.', default = data_list_default)
-    parser.add_argument('--output_dir', type = str, help = 'Directory for the output pesudo whispered speech.', default = output_dir_default)
+    parser.add_argument('--output_dir', type = str, help = 'Directory for the output pseudo whispered speech.', default = output_dir_default)
 
     argv = parser.parse_args()
 
