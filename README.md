@@ -1,5 +1,5 @@
 # Normal2Whisper
-This is an implementation of our pseudo-whispered speech conversion method in the paper Improving Whispered Speech Recognition Performance using Pseudo-whispered based Data Augmentation (to be appear in ASRU 2023).
+This is an implementation of our pseudo-whispered speech conversion method in the paper Improving Whispered Speech Recognition Performance using Pseudo-whispered based Data Augmentation ([pdf](https://arxiv.org/pdf/2311.05179.pdf); to be appear in ASRU 2023).
 
 <img src="Pseudo-whisper.png" width="100%">
 
@@ -14,6 +14,8 @@ This is an implementation of our pseudo-whispered speech conversion method in th
 1. `utils.py`
 
     This script has all the essential functions used in our proposed method.
+
+    > **Note:** In our work, the speech files are or re-sampled to 16 kHz. So the parameter of GFM-IAIF-GC is based on this sample rate.
 
 2. `data_gen.py`
 
@@ -44,4 +46,8 @@ python rq2_gen.py --data_list './list_example(PATH TO THE LIST OF SOURCE TRAININ
 python rq2_gen.py --data_list './list_example(PATH TO THE LIST OF SOURCE TRAINING DATA)' --output_dir './data/training/wTIMIT/s2(PATH TO OUTPUT DIRECTORY)' --generating_mode '2'
 ```
 
-**Note:** you can check `./list_example` to see an example of the input data list. 
+>**Note:** you can check `./list_example` to see an example of the input data list. You can get the list by using command: 
+>```Bash
+>find ./corpora/wTIMIT/nist/TRAIN/normal/US/(PATH TO SOURCE TRAINING DATA) -name "*.WAV" | awk '{split($0,a,"/");split(a[14],b,"."); print b[1] ,$0}' > list
+>```
+>You may need to check your data direcoory and change `a[14]` in the command.
