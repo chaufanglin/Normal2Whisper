@@ -1,10 +1,10 @@
 # Normal2Whisper
-This is an implementation of our pseudo-whispered speech conversion method in the paper Improving Whispered Speech Recognition Performance using Pseudo-whispered based Data Augmentation ([pdf](https://arxiv.org/pdf/2311.05179.pdf); to be appear in ASRU 2023).
+This is an implementation of our pseudo-whispered speech conversion method in the paper Improving Whispered Speech Recognition Performance using Pseudo-whispered based Data Augmentation ([pdf](https://arxiv.org/pdf/2311.05179.pdf); to appear in ASRU 2023).
 
 <img src="Pseudo-whisper.png" width="100%">
 
 ## Dependencies
-* Python 3.8 
+* Python 3.9 
 * Numpy
 * soundfile
 * librosa
@@ -50,4 +50,7 @@ python rq2_gen.py --data_list './list_example(PATH TO THE LIST OF SOURCE TRAININ
 >```Bash
 >find ./corpora/wTIMIT/nist/TRAIN/normal/US/(PATH TO SOURCE TRAINING DATA) -name "*.WAV" | awk '{split($0,a,"/");split(a[14],b,"."); print b[1] ,$0}' > list
 >```
->You may need to check your data direcoory and change `a[14]` in the command.
+>You may need to check your data directory and change `a[14]` in the command.
+
+## Contact
+If you have any questions, feel free to open an issue or send me an email linzh (at) tcd.ie
