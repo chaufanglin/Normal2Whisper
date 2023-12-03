@@ -52,7 +52,7 @@ def gfm_iaif(s_gvl, nv=48, ng=3, d=0.99, win=None):
 
     Note:
     Function originally coded by Olivier Perrotin (https://github.com/operrotin/GFM-IAIF). 
-    This code is translated to Python and adapted by Chaufang Lin (chaufang.zflin@outlook.com)
+    This code is translated to Python and adapted by Zhaofeng Lin (linzh@tcd.ie)
 
     Parameters:
     ----------
@@ -142,8 +142,7 @@ def gfm_iaif_glottal_remove(s_gvl, nv=48, ng=3, d=0.99, win=None):
 
     Note:
     Function originally coded by Olivier Perrotin (https://github.com/operrotin/GFM-IAIF). 
-    This code is translated to Python and adapted by Chaufang Lin (chaufang.zflin@outlook.com)
-
+    This code is translated to Python and adapted by Zhaofeng Lin (linzh@tcd.ie)
     Parameters:
     ----------
         s_gvl: Speech signal frame
@@ -225,7 +224,7 @@ def pesudo_whisper_gen(s_n, fs, Lv=16):
     Pesudo whispered speech generating function, using GFM-IAIF and moving averge filtering.
 
     Note:
-    This code is written by Chaufang Lin (chaufang.zflin@outlook.com)
+    This code is written by Zhaofeng Lin (linzh@tcd.ie)
 
     Parameters:
     ----------
@@ -283,7 +282,7 @@ def glottal_remove_gen(s_n, fs, Lv=16):
     Speech without glottal contribution generating function, using GFM-IAIF.
 
     Note:
-    This code is written by Chaufang Lin (chaufang.zflin@outlook.com)
+    This code is written by Zhaofeng Lin (linzh@tcd.ie)
 
     Parameters:
     ----------
@@ -335,7 +334,7 @@ def bandwidth_widen_gen(s_n, fs, maf_freq=400):
     Speech with expanded formant bandwidth generating function, using moving averge filtering.
 
     Note:
-    This code is written by Chaufang Lin (chaufang.zflin@outlook.com)
+    This code is written by Zhaofeng Lin (linzh@tcd.ie)
 
     Parameters:
     ----------
@@ -367,7 +366,7 @@ def lpcfit(x, p=12, h=128, w=None, ov=1):
 
     Note:
     Function originally coded by Dan Ellis (http://labrosa.org/~dpwe/resources/matlab/polewarp/lpcfit.m). 
-    This code is translated to Python and adapted by Chaufang Lin (chaufang.zflin@outlook.com)
+    This code is translated to Python and adapted by Zhaofeng Lin (linzh@tcd.ie)
 
     Parameters:
     ----------
