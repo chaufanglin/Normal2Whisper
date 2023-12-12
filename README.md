@@ -52,5 +52,15 @@ python rq2_gen.py --data_list './list_example(PATH TO THE LIST OF SOURCE TRAININ
 >```
 >You may need to check your data directory and change `a[14]` in the command.
 
+## Citation
+```bibtex
+@article{lin2023improving,
+  title={Improving Whispered Speech Recognition Performance using Pseudo-whispered based Data Augmentation},
+  author={Lin, Zhaofeng and Patel, Tanvina and Scharenborg, Odette},
+  journal={arXiv preprint arXiv:2311.05179},
+  year={2023}
+}
+```
+
 ## Contact
 If you have any questions, feel free to open an issue or send me an email linzh (at) tcd.ie
