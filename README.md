@@ -31,19 +31,24 @@ This is an implementation of our pseudo-whispered speech conversion method in th
 **1. Convert normal speech into pseudo-whispered speech from your dataset:**
 
 ```Bash
-python data_gen.py --data_list './list_example(PATH TO THE LIST OF SOURCE TRAINING DATA)' --output_dir './data/training/wTIMIT/PW(PATH TO OUTPUT PW DIRECTORY)' 
+python data_gen.py --data_list './list_example(PATH TO THE LIST OF SOURCE TRAINING DATA)' \
+                   --output_dir './data/training/wTIMIT/PW(PATH TO OUTPUT PW DIRECTORY)' 
 ```
 
 **2. Convert normal speech into 1) normal speech without glottal contributions:**
 
 ```Bash
-python rq2_gen.py --data_list './list_example(PATH TO THE LIST OF SOURCE TRAINING DATA)' --output_dir './data/training/wTIMIT/s1(PATH TO OUTPUT DIRECTORY)' --generating_mode '1'
+python rq2_gen.py --data_list './list_example(PATH TO THE LIST OF SOURCE TRAINING DATA)' \
+                  --output_dir './data/training/wTIMIT/s1(PATH TO OUTPUT DIRECTORY)' \
+                  --generating_mode '1'
 ```
 
 **3. Convert normal speech into 2) normal speech with widened formant bandwidth and shifted formant frequencies:**
 
 ```Bash
-python rq2_gen.py --data_list './list_example(PATH TO THE LIST OF SOURCE TRAINING DATA)' --output_dir './data/training/wTIMIT/s2(PATH TO OUTPUT DIRECTORY)' --generating_mode '2'
+python rq2_gen.py --data_list './list_example(PATH TO THE LIST OF SOURCE TRAINING DATA)' \
+                  --output_dir './data/training/wTIMIT/s2(PATH TO OUTPUT DIRECTORY)' \
+                  --generating_mode '2'
 ```
 
 >**Note:** you can check `./list_example` to see an example of the input data list. You can get the list by using command: 
