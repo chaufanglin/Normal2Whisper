@@ -59,14 +59,16 @@ python rq2_gen.py --data_list './list_example(PATH TO THE LIST OF SOURCE TRAININ
 
 ## Citation
 ```bibtex
-@inproceedings{lin2023improving,
-  title={Improving Whispered Speech Recognition Performance Using Pseudo-Whispered Based Data Augmentation},
+@INPROCEEDINGS{10389801,
   author={Lin, Zhaofeng and Patel, Tanvina and Scharenborg, Odette},
-  booktitle={2023 IEEE Automatic Speech Recognition and Understanding Workshop (ASRU)},
-  pages={1--8},
+  booktitle={2023 IEEE Automatic Speech Recognition and Understanding Workshop (ASRU)}, 
+  title={Improving Whispered Speech Recognition Performance Using Pseudo-Whispered Based Data Augmentation}, 
   year={2023},
-  organization={IEEE}
-}
+  volume={},
+  number={},
+  pages={1-8},
+  keywords={Error analysis;Databases;Conferences;Training data;Transforms;Data augmentation;Acoustics;Whispered speech;pseudo-whisper;end-to-end speech recognition;wTIMIT;signal processing},
+  doi={10.1109/ASRU57964.2023.10389801}}
 ```
 
 ## Contact
