@@ -51,7 +51,7 @@ python rq2_gen.py --data_list './list_example(PATH TO THE LIST OF SOURCE TRAININ
                   --generating_mode '2'
 ```
 
->**Note:** you can check `./list_example` to see an example of the input data list. You can get the list by using command: 
+>**Note:** you can check `./list_example` to see an example of the input data list. You can get the list by using this command: 
 >```Bash
 >find ./corpora/wTIMIT/nist/TRAIN/normal/US/(PATH TO SOURCE TRAINING DATA) -name "*.WAV" | awk '{split($0,a,"/");split(a[14],b,"."); print b[1] ,$0}' > list
 >```
@@ -59,11 +59,13 @@ python rq2_gen.py --data_list './list_example(PATH TO THE LIST OF SOURCE TRAININ
 
 ## Citation
 ```bibtex
-@article{lin2023improving,
-  title={Improving Whispered Speech Recognition Performance using Pseudo-whispered based Data Augmentation},
+@inproceedings{lin2023improving,
+  title={Improving Whispered Speech Recognition Performance Using Pseudo-Whispered Based Data Augmentation},
   author={Lin, Zhaofeng and Patel, Tanvina and Scharenborg, Odette},
-  journal={arXiv preprint arXiv:2311.05179},
-  year={2023}
+  booktitle={2023 IEEE Automatic Speech Recognition and Understanding Workshop (ASRU)},
+  pages={1--8},
+  year={2023},
+  organization={IEEE}
 }
 ```
 
