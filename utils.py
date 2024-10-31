@@ -219,9 +219,9 @@ def gfm_iaif_glottal_remove(s_gvl, nv=48, ng=3, d=0.99, win=None):
     return s_v
 
 
-def pesudo_whisper_gen(s_n, fs, Lv=16):
+def pseudo_whisper_gen(s_n, fs, Lv=16):
     """
-    Pesudo whispered speech generating function, using GFM-IAIF and moving averge filtering.
+    Pseudo whispered speech generating function, using GFM-IAIF and moving averge filtering.
 
     Note:
     This code is written by Zhaofeng Lin (linzh@tcd.ie)
@@ -234,7 +234,7 @@ def pesudo_whisper_gen(s_n, fs, Lv=16):
 
     Returns:
     -------
-        y_pw: Pesudo whispered speech wavform
+        y_pw: Pseudo whispered speech wavform
     """
 
     EPSILON = 1e-8

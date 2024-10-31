@@ -3,7 +3,7 @@ import numpy as np
 import argparse
 import soundfile as sf
 import librosa
-from utils import pesudo_whisper_gen
+from utils import pseudo_whisper_gen
 
 def generate(data_list, output_dir):
 
@@ -32,7 +32,7 @@ def generate(data_list, output_dir):
             
             s_n, fs = librosa.load(filepath, sr=16000, dtype=np.float64)  # resample to 16k
             # s_n, fs = sf.read(filepath)
-            s_pw = pesudo_whisper_gen(s_n, fs)
+            s_pw = pseudo_whisper_gen(s_n, fs)
             
             sf.write(os.path.join(spkpath, name) + '-pw.wav', s_pw, fs) #'.wav', s_pw, fs)    # '-pw.wav', s_pw, fs)
     f1.close()
