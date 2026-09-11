@@ -1,3 +1,8 @@
+# Copyright (C) 2023 Zhaofeng Lin
+# This file contains original functions written by Zhaofeng Lin as well as 
+# functions translated/adapted from MATLAB code by Olivier Perrotin and Dan Ellis.
+# Licensed under GNU LGPLv3 (https://www.gnu.org/licenses/lgpl-3.0.txt).
+
 import numpy as np
 from numpy.random import randn
 import soundfile as sf

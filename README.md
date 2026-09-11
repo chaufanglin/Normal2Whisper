@@ -71,5 +71,9 @@ python rq2_gen.py --data_list './list_example(PATH TO THE LIST OF SOURCE TRAININ
   doi={10.1109/ASRU57964.2023.10389801}}
 ```
 
+## Licence
+This project is licensed under the GNU Lesser General Public License. 
+Note that `utils.py` contains functions translated and adapted from MATLAB code from [GFM-IAIF](https://github.com/operrotin/GFM-IAIF/), alongside original utilities written for this paper.
+
 ## Contact
 If you have any questions, feel free to open an issue or send me an email linzh (at) tcd.ie
